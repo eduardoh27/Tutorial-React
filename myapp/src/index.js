@@ -9,9 +9,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
-  <Post author="John Doe" content="This is the post content" likes={20} />
-);
-
+  <div>
+    <Post author="John Doe" content="This is the post content" likes={20} />
+    <Post author="Anne Hill" content="I like React" likes={3} />
+    <Post author="Laia Martins" content="I love JSX" likes={0} />
+  </div>
+ );
+ 
 // const component = <h1>Hola mundo</h1>;
 // root.render(component);
 
