@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Post from './Post';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+root.render(
+  <Post author="John Doe" content="This is the post content" likes={20} />
+);
 
 // const component = <h1>Hola mundo</h1>;
 // root.render(component);
 
-root.render(<App />);
+// root.render(<App />);
 
 // root.render(
 //   <React.StrictMode>
